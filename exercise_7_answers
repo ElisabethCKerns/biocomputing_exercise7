@@ -1,0 +1,51 @@
+#!/usr/bin/env python2
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Oct 12 10:36:57 2018
+
+@author: elisabeth
+"""
+
+#Arguments Data, Lower Bound Years School, 
+#Upper Bound Years School 
+
+
+    
+
+#Write function that returns odd rows of any pandas data frame
+import pandas as pd
+data = pd.read_csv('iris.csv', header=0, sep=',')
+
+def oddRows(dataFrame):
+    dfOdd = dataFrame[dataFrame.index % 2 !=0]
+    print(dfOdd)
+print(oddRows(data))
+
+#Return number of observations for given species in data set
+import pandas as pd
+data = pd.read_csv('iris.csv', header=0, sep=',')
+print(data)
+def SpeciesList:
+    species=data[data['species' == Setosa]]
+print(len(SpeciesList.index))
+
+
+#Return data frame for flowers w/ Sepal > Value
+import pandas as pd
+data = pd.read_csv('iris.csv', header=0, sep=',')
+print(data)
+def LargeSepal:
+    Sepal_6=data[data['Sepal.Width] > 6.0]]
+print(Sepal_6)
+ 
+
+#Write data for given species to comma-delimited file 
+import pandas as pd
+data = pd.read_csv('iris.csv', header=0, sep=',')
+print(data)
+df = data[data[species=='Setosa']]
+print ('Setosa+.csv') 
+    
+
+
+
